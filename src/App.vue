@@ -65,6 +65,7 @@
       </div>
     </div>
     <Toaster />
+    <Footer />
   </section>
 </template>
 
@@ -72,8 +73,11 @@
 import { EMPTY_VALUE } from "./constants/index";
 import { mapGetters, mapMutations } from "vuex";
 
+import Footer from "./components/global/Footer";
+
 export default {
   name: "app",
+  components: { Footer },
   data() {
     return {
       audios: require("./assets/audios/asJSON/audios.json"),
