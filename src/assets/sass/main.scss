@@ -1,0 +1,17 @@
+/*
+  * Thanks to:
+  * @see https://github.com/neovive/bulma-vuecli#add-bulma-custom-sass-styles-and-bulma-variable-customizations-to-mainscss
+  */
+@import '~bulma/bulma';
+
+
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+*:focus {
+  outline: none;
+}
