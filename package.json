@@ -10,7 +10,6 @@
   },
   "dependencies": {
     "core-js": "3",
-    "dropbox": "^4.0.30",
     "lodash": "^4.17.15",
     "music-metadata": "^6.3.3",
     "vue": "^2.6.11",
