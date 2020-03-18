@@ -1,30 +1,3 @@
-# dropbox_api
-Simple [Vue.js](https://vuejs.org/) SPA integrated with dropbox API.
+![La Zanzara](https://scontent-mxp1-1.xx.fbcdn.net/v/t1.0-9/81537484_481052232555951_6140500930476376064_o.jpg?_nc_cat=106&_nc_sid=825194&_nc_oc=AQlOqhllKPQkd_wLEefcAGWUG9x0upACrndB4FDSkxoEsnX9OZOQaYmZ297kNVIhO-k&_nc_ht=scontent-mxp1-1.xx&oh=e9669e90aeb4f01692a2b1d70141a389&oe=5E96B549)
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Run your tests
-```
-npm run test
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# La Zanzara 🦟
