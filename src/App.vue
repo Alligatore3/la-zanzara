@@ -231,52 +231,52 @@ export default {
   font-family: "Avenir", Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
 
-.py-0 {
-  padding-top: 0 !important;
-  padding-bottom: 0 !important;
-}
+  .py-0 {
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+  }
 
-.p-1 {
-  padding: 1rem;
-}
+  .p-1 {
+    padding: 1rem;
+  }
 
-.mx-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
+  .mx-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-.my-2 {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-}
+  .my-2 {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+  }
 
-.mb-1 {
-  margin-bottom: 1rem;
-}
+  .mb-1 {
+    margin-bottom: 1rem;
+  }
 
-.h-100 {
-  height: 100%;
-}
+  .h-100 {
+    height: 100%;
+  }
 
-.max-w-200 {
-  max-width: 200px;
-}
+  .max-w-200 {
+    max-width: 200px;
+  }
 
-.share-icon {
-  max-width: 17px;
-  margin-top: 7px;
-}
+  .share-icon {
+    max-width: 17px;
+    margin-top: 7px;
+  }
 
-.pointer {
-  cursor: pointer;
-}
+  .pointer {
+    cursor: pointer;
+  }
 
-.truncate-text {
-  flex: 1;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  .truncate-text {
+    flex: 1;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
 }
 </style>
