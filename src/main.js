@@ -6,6 +6,10 @@ import App from "@/App.vue";
 import store from "./plugins/vuex";
 import router from "./plugins/router";
 
+/**
+ * @description Automatic global registration of components
+ * inside /global/ folder. So no import(required)
+ */
 (function registerComponents() {
   const requireComponent = require.context("@/components/global", true);
 
