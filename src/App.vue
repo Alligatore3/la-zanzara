@@ -59,9 +59,7 @@
             </div>
           </div>
         </div>
-        <p v-else class="has-text-centered is-size-3">
-          Nada zia ¯\_(ツ)_/¯
-        </p>
+        <EmptyResults v-else />
       </div>
     </div>
     <Toaster />
@@ -74,10 +72,11 @@ import { EMPTY_VALUE } from "./constants/index";
 import { mapGetters, mapMutations } from "vuex";
 
 import Footer from "./components/global/Footer";
+import EmptyResults from "./components/EmptyResults";
 
 export default {
   name: "app",
-  components: { Footer },
+  components: { Footer, EmptyResults },
   data() {
     return {
       audios: require("./assets/audios/asJSON/audios.json"),
@@ -241,6 +240,16 @@ export default {
 
 .p-1 {
   padding: 1rem;
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.my-2 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
 }
 
 .mb-1 {
