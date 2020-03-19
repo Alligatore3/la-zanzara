@@ -68,18 +68,18 @@
 </template>
 
 <script>
-import { EMPTY_VALUE } from "./constants/index";
+import { EMPTY_VALUE } from "@/constants/index";
 import { mapGetters, mapMutations } from "vuex";
 
-import Footer from "./components/global/Footer";
-import EmptyResults from "./components/EmptyResults";
+import Footer from "@/components/global/Footer";
+import EmptyResults from "@/components/EmptyResults";
 
 export default {
   name: "app",
   components: { Footer, EmptyResults },
   data() {
     return {
-      audios: require("./assets/audios/asJSON/audios.json"),
+      audios: require("@/assets/audios/asJSON/audios.json"),
       spinnerVisibility: true,
       generalError: null
     };
