@@ -6,12 +6,6 @@ import App from "@/App.vue";
 import store from "./plugins/vuex";
 import router from "./plugins/router";
 
-/**
- * @description Import main.scss into your main.js
- * @see https://github.com/neovive/bulma-vuecli#import-mainscss-into-your-mainjs
- */
-import "./assets/sass/main.scss";
-
 (function registerComponents() {
   const requireComponent = require.context("@/components/global", true);
 

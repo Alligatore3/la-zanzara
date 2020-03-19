@@ -71,12 +71,12 @@
 import { EMPTY_VALUE } from "@/constants/index";
 import { mapGetters, mapMutations } from "vuex";
 
-import Footer from "@/components/global/Footer";
-import EmptyResults from "@/components/EmptyResults";
-
 export default {
   name: "app",
-  components: { Footer, EmptyResults },
+  components: {
+    Footer: () => import("@/components/global/Footer"),
+    EmptyResults: () => import("@/components/EmptyResults")
+  },
   data() {
     return {
       audios: require("@/assets/audios/asJSON/audios.json"),
