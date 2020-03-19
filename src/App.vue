@@ -74,7 +74,6 @@ import { mapGetters, mapMutations } from "vuex";
 export default {
   name: "app",
   components: {
-    Footer: () => import("@/components/global/Footer"),
     EmptyResults: () => import("@/components/EmptyResults")
   },
   data() {
