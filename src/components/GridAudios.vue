@@ -125,3 +125,12 @@ export default {
   }
 };
 </script>
+
+<style lang="scss">
+#audio-container {
+  .share-icon {
+    max-width: 17px;
+    margin-top: 7px;
+  }
+}
+</style>
