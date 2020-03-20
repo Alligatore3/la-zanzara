@@ -2,7 +2,7 @@
   <section id="app">
     <div class="container is-widescreen">
       <SearchBar />
-      <div class="p-1">
+      <div class="p-1 mb-3">
         <Spinner :show="spinnerVisibility" />
         <GridAudios
           v-if="filteredAudiosByTerm.length"

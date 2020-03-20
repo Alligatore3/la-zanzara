@@ -1,6 +1,6 @@
 <template>
   <div id="audio-container" class="columns is-multiline is-mobile">
-    <div class="column is-12 py-0">
+    <div class="column is-12 py-0 mt-1">
       <p class="has-text-right">Risultati: {{ audiosAsProp.length }}</p>
     </div>
     <div
