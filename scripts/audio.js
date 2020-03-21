@@ -35,6 +35,10 @@ const parseFiles = audioFiles => {
   return Promise.all(audiosWithMeta);
 };
 
+/**
+ * @description Due to git behaviour to not commit
+ * empty folder, we have to check if exists or nah.
+ */
 const generateJSON = audiosWithMeta => {
   /**
    * @param {String} path The path of the file to write data to
@@ -44,19 +48,32 @@ const generateJSON = audiosWithMeta => {
    */
   FILE_SYSTEM.writeFileSync("audios.json", JSON.stringify(audiosWithMeta));
 
+  const whereToMove = `${ABSOLUTE_AUDIOS_PATH}/asJSON/`
+  /**
+   * @see https://stackoverflow.com/a/26815894
+   */
+  if (!FILE_SYSTEM.existsSync(whereToMove)){
+    FILE_SYSTEM.mkdirSync(whereToMove);
+    moveJSONInProperPath(whereToMove)
+  } else {
+    moveJSONInProperPath(whereToMove)
+  }
+};
+
+const moveJSONInProperPath = where => {
   /**
    * @description Asynchronously rename file at oldPath to the pathname provided as newPath.
    * In the case that newPath already exists, it will be overwritten.
    * @see https://nodejs.org/docs/latest/api/fs.html#fs_fs_rename_oldpath_newpath_callback
    */
-  FILE_SYSTEM.rename(
-    "audios.json",
-    `${ABSOLUTE_AUDIOS_PATH}/asJSON/audios.json`,
-    err => {
-      if (err) throw err;
-    }
+  return FILE_SYSTEM.rename(
+      "audios.json",
+      `${where}/audios.json`,
+      err => {
+        if (err) throw err;
+      }
   );
-};
+}
 
 FILE_SYSTEM.readdir(ABSOLUTE_AUDIOS_PATH, (err, files) =>
   readAllMetadata(files)
