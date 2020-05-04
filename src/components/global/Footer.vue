@@ -26,7 +26,7 @@
             Sito disgraziatamente sviluppato da
           </span>
           <a
-            href="https://twitter.com/mattia_zanella"
+            href="https:alligatore3.io"
             alt="autore"
             target="_blank"
             class="is-italic"
