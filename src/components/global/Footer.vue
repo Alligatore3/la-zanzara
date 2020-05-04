@@ -26,7 +26,7 @@
             Sito disgraziatamente sviluppato da
           </span>
           <a
-            href="https:alligatore3.io"
+            href="https://alligatore3.io"
             alt="autore"
             target="_blank"
             class="is-italic"
